@@ -13,10 +13,11 @@ function handelClick(target,number){
     const setValu=target.parentNode.parentNode.childNodes[7].childNodes[1]
     setValu.innerText=area.toFixed(1)
     const name=target.parentNode.parentNode.childNodes[1].innerText
-    const setAnotherSite=document.getElementById('quntity')
+    const setAnotherSite=target.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[3]
     const count=setAnotherSite.childElementCount;
     const p=document.createElement('p')
     p.classList.add('my-2')
+    p.classList.add('px-2')
     p.innerHTML=`
     ${count+1}. ${name} ${area} cm<sup>2</sup>
     `
